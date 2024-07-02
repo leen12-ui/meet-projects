@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+
+</head>
+<body>
+    <form method="POST" action="/signup">
+
+        <!-- Heading -->
+        <h4>
+            Create an account in TODO
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Fill your info please :)
+
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        <!-- username -->
+        <div>
+            <label>username</label>
+            <div class="input-group">
+                <input type="username"  name="username" minlength="1">
+            </div>
+        </div>
+        <div>
+            <input type="submit"/>
+        </div>
+</form>
+<a href="/signin"><button>signin</button></a>
+<!-- make the submit button go to the todo list page 
+</body> -->
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+form {
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"],
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #ff6347;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+    </style>
+</body>
+</html>
+        
