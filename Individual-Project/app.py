@@ -2,7 +2,10 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask import session as login_session
 import pyrebase
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7634ab (shfaamerrrrrrrrrrrrrrrrrr)
 config = {
   "apiKey": "AIzaSyDYaEd6GchS0theUwbl5r2n5-o_CDmbLKQ",
   "authDomain": "individual-project-y2.firebaseapp.com",
@@ -22,7 +25,10 @@ app.config['SECRET_KEY'] = 'super-secret-key'
 
 #Code goes below here
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7634ab (shfaamerrrrrrrrrrrrrrrrrr)
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
    if request.method == 'POST':
